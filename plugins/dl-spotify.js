@@ -4,12 +4,12 @@ import fetch from 'node-fetch';
 import displayLoadingScreen from '../lib/loading.js';
 let handler = async (m, { conn, text }) => {
     if (!text) {
-        console.log('No song name provided.');
-        throw `*Please enter a song name*`;
+        console.log('لم نجد الأغنية التي تبحث عنها .. \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx.');
+        throw `*إسم الأغنية? \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx*`;
     }
   m.react('🎶')
   await displayLoadingScreen(conn, m.chat);
-  let pp = 'https://wallpapercave.com/wp/wp7932387.jpg'
+  let pp = 'https://telegra.ph/file/3fb2f76884257ea29252d.jpg'
     const query = encodeURIComponent(text);
     let res = `https://guruapi.tech/api/spotifydl?url=${query}`
    // let spotify = await (await fetch(res)).buffer()
@@ -20,12 +20,12 @@ let handler = async (m, { conn, text }) => {
         mimetype: 'audio/mpeg',
         ptt: true,
         waveform:  [100, 0, 100, 0, 100, 0, 100],
-        fileName: "XLICON.mp3",
+        fileName: "L3ZWA.mp3",
     
         contextInfo: {
           mentionedJid: [m.sender],
           externalAdReply: {
-            title: "↺ |◁   II   ▷|   ♡",
+            title: "اهلا وسهبا",
             body: `Now playing: ${text}`,
             thumbnailUrl: pp,
             sourceUrl: null,
