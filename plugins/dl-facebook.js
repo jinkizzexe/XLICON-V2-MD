@@ -25,7 +25,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
     m.react(done);
   } catch (error) {
     console.log(error);
-    m.reply('⚠️ An error occurred while processing the request. Please try again later.');
+    m.reply('⚠️ حدتث مشكلة أعد المحاولة لاحقا... \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx.');
   }
 };
 
