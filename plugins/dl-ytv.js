@@ -15,21 +15,12 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 
   const response = await fetch(ggapi);
   if (!response.ok) {
-      console.log('Error searching for song:', response.statusText);
-      throw 'Error searching for song';
+      console.log('خطأ في البحث عن الأغنية ..:', response.statusText);
+      throw 'خطأ في البحث عن الأغنية..';
   }
   const data = await response.json();
 
-  const caption = `✼ ••๑⋯❀ Y O U T U B E ❀⋯⋅๑•• ✼
-	  
-  ❏ Title: ${data.result.title}
-  ❏ Channel: ${data.result.channel}
-  ❐ Duration: ${data.result.seconds} seconds
-  ❑ Views: ${data.result.view}
-  ❒ Upload: ${data.result.publicDate}
-  ❒ Link: ${args[0]}
-  
-  ⊱─━⊱༻●༺⊰━─⊰`
+  const caption = `هاذا هو الفيديو الخاص بك \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx`
 
 
   let vid = await fetch(gapi)
