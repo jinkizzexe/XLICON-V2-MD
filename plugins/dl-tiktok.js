@@ -6,11 +6,11 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
  if (!args[0] && m.quoted && m.quoted.text) {
   args[0] = m.quoted.text;
 }
-if (!args[0] && !m.quoted) throw `Give the link of the video Tiktok or quote a tiktok link`;
+if (!args[0] && !m.quoted) throw `أرسل رابط فيديو تيك توك الذي تريد تحميله .. \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx`;
  if (!args[0].match(/tiktok/gi)) throw `Verify that the link is from TikTok`;
  
  
-  let txt = 'Here your Requested video';
+  let txt = 'الفيديو الخاص بك .. \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx';
 
   try {
     const { author: { nickname }, video, description } = await tiktokdl(args[0]);
@@ -24,7 +24,7 @@ if (!args[0] && !m.quoted) throw `Give the link of the video Tiktok or quote a t
       let p = await fg.tiktok(args[0]);
       conn.sendFile(m.chat, p.play, 'tiktok.mp4', txt, m);
     } catch {
-      m.reply('*An unexpected error occurred*');
+      m.reply('*خطأ في الرابط*');
     }
   }
 };
