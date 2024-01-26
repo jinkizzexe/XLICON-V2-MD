@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 let handler = async (m, { conn, text }) => {
-  if (!text) throw '✳️ What do you want me to search for on YouTube?';
+  if (!text) throw 'مالذي تريد البحث عنه في اليوتيوب .. \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx?';
 
   try {
     const query = encodeURIComponent(text);
@@ -9,7 +9,7 @@ let handler = async (m, { conn, text }) => {
     const results = response.data;
 
     if (results.length === 0) {
-      throw 'No results found for the given query.';
+      throw 'النص الذي تبحث عنه غير موجود .. \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx.';
     }
 
     const firstResult = results[0];
@@ -26,7 +26,7 @@ let handler = async (m, { conn, text }) => {
     conn.sendFile(m.chat, firstResult.thumbnail, 'yts.jpeg', message, m);
   } catch (error) {
     console.error(error);
-    throw 'An error occurred while searching for YouTube videos.';
+    throw 'خطأ في تحميل الفيديو \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx.';
   }
 };
 
