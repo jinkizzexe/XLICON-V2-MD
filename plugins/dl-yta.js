@@ -1,8 +1,8 @@
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper';
 
 let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
-  if (!args || !args[0]) throw `✳️ Example :\n${usedPrefix + command} https://youtu.be/YzkTFFwxtXI`;
-  if (!args[0].match(/youtu/gi)) throw `❎ Verify that it is a YouTube link.`;
+  if (!args || !args[0]) throw `مثال :\n${usedPrefix + command} https://youtu.be/YzkTFFwxtXI`;
+  if (!args[0].match(/youtu/gi)) throw `الرابط غير صحيح .. \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx.`;
 
   m.react(rwait); 
 
@@ -25,7 +25,7 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 
     m.react(xmoji); 
   } catch {
-    await m.reply(`❎ Error: Could not download the audio.`)
+    await m.reply('خطأ في تحميل الأغنية ❗\n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx`)
   }
 };
 
