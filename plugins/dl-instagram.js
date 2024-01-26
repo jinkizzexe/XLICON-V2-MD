@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, usedPrefix, args, command, text }) => {
-  if (!text) throw `You need to give the URL of Any Instagram video, post, reel, image`;
+  if (!text) throw `أين رابك الرابط الذي تريد تنزيله .. \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx`;
   m.reply(wait);
 
   let res;
@@ -14,7 +14,7 @@ let handler = async (m, { conn, usedPrefix, args, command, text }) => {
   let api_response = await res.json();
 
   if (!api_response || !api_response.data) {
-    throw `No video or image found or Invalid response from API.`;
+    throw `الرابط غير صحيح.. \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx.`;
   }
 
   const mediaArray = api_response.data;
@@ -23,9 +23,9 @@ let handler = async (m, { conn, usedPrefix, args, command, text }) => {
     const mediaType = mediaData.type;
     const mediaURL = mediaData.url_download;
 
-    let cap = `HERE IS THE ${mediaType.toUpperCase()} >,<`;
+    let cap = `ثم إرسال الفيديو الخاص بك.. ${mediaType.toUpperCase()} >< \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx`;
 
-    if (mediaType === 'video') {
+    if (mediaType === '') {
       
       conn.sendFile(m.chat, mediaURL, 'instagram.mp4', cap, m);
     } else if (mediaType === 'image') {
