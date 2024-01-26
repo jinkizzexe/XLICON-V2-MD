@@ -3,11 +3,11 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!global.db.data.chats[m.chat].nsfw) throw `🚫 group doesnt supprt nsfw \n\n enable it by \n*${usedPrefix}enable* nsfw`
   let user = global.db.data.users[m.sender].age
-  if (user < 17) throw m.reply(`❎ uneed to be atleast 18 years`)
+  if (user < 17) throw m.reply(`هل لديك اكثر من 18`)
 m.react(rwait)
 
 let res = await fetch(`https://fantox-apis.vercel.app/${command}`)
-if (!res.ok) throw await res.text()
+if (!res.ok) throw await res.text(`\n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx’)
 let json = await res.json()
 if (!json.url) throw '❎ Error'
 conn.sendFile(m.chat, json.url, 'img.jpg', `✅ Random ${command}`, m)
@@ -18,7 +18,7 @@ handler.command = ['genshin', 'swimsuit', 'schoolswimsuit', 'white', 'barefoot',
 //handler.tags = ['nsfw'] 
 handler.diamond = true
 handler.group = true
-handler.register = true
+handler.register = false
 
 
 export default handler
