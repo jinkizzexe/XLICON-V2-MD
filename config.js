@@ -7,12 +7,12 @@ import axios from 'axios'
 
 
 global.owner = [
-  ['918360234087', 'WHITE', true], 
-  ['233208179431', 'Abraham Dwamena', true],
-  ['923184070915', '𝙎𝘼𝙇𝙈𝘼𝙉 𝘼𝙃𝙈𝘼𝘿 -(𝘼𝙝𝙢𝙢𝙞)', true], 
+  ['918360234087', '؏MRX ', true], 
+  ['233208179431', '؏IMRX 2', true],
+  ['923184070915', '𝙎𝘼𝙇𝙈𝘼𝙉 𝘼𝙃𝙈𝘼𝘿 -(𝘼𝙝𝙢𝙢𝙞)', false], 
   ['94789481495', '𝙼𝚉𝙽 𝙺𝙸𝙽𝙶 ⚡', true],
-  ['233533763772', 'Abraham Dwamena2', true],
-  ['233531910067', 'Abraham Dwamena3', true],
+  ['233533763772', 'Abraham Dwamena2', false],
+  ['233531910067', 'Abraham Dwamena3', false],
   
 ] //Number of owners
 
@@ -55,21 +55,21 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.botname = 'XLICON-V2'
+global.botname = '*𝘓؏𝘡𝘞𝘈𝘈*'
 global.premium = 'true'
-global.packname = 'XLICON TEAM' 
-global.author = '@XLICON-V2' 
+global.packname = '؏MRX' 
+global.author = '@𝘓؏𝘡𝘞𝘈𝘈' 
 global.menuvid = 'https://telegra.ph/file/325630f66abc968eda8e2.mp4'
-global.igfg = '▢✓ Follow My channel\nhttps://whatsapp.com/channel/0029VaE8GbCDzgTILE7OtC3e\n' 
-global.dygp = 'https://chat.whatsapp.com/BfH0KLkICn2BjmGFMRcGMW'
-global.fgsc = 'https://github.com/Guru322/GURU-BOT' 
-global.fgyt = 'https://youtube.com/@s4salmanyt'
-global.fgpyp = 'https://youtube.com/@s4salmanyt'
+global.igfg = '▢✓ Follow My channel\n\n' 
+global.dygp = 'https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx'
+global.fgsc = 'https://github.com/jauresexe' 
+//global.fgyt = 'https://youtube.com/@s4salmanyt'
+//global.fgpyp = 'https://youtube.com/@s4salmanyt'
 global.fglog = 'XLICON.jpg' 
 global.thumb = fs.readFileSync('./XLICON.jpg')
 
 
-global.wait = '*🕣 _XLICON IS LODIND..._*\n*▰▰▰▱▱▱▱▱⭐*'
+global.wait = '*_سوف يتم تلبية طلبڪ 👨🏿‍💻_* \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✔️'
