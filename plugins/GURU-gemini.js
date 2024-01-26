@@ -5,7 +5,7 @@ const genAI = new GoogleGenerativeAI('AIzaSyDJC5a882ruaC4XL6ejY1yhgRkN-JNQKg8');
 
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
   try {
-    if (!text) throw `uhm.. what do you want to say?`
+    if (!text) throw ` امم. ماذا قلت \n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx?`
     m.react('🤖')
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
@@ -17,7 +17,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
     m.reply(textt)
   } catch (error) {
     console.error(error);
-    m.reply('Oops! Something went wrong. , we are trying had to fix it asap');
+    m.reply('_أُووبس! حدث خطأ ما أثناء إنشاء الصور. الرجاء معاودة المحاولة في وقت لاحق_');
   }
 }
 handler.help = ['gemini <text>']
