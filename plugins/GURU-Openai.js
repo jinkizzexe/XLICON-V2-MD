@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 let handler = async (m, { text, conn, usedPrefix, command }) => {
   if (!text && !(m.quoted && m.quoted.text)) {
-    throw `Please provide some text or quote a message to get a response.`;
+    throw `قم بكتابة ماتريد التكلم عنه\n instagram \n https://www.instagram.com/ovmar_1 \n Whatsapp GP \n https://chat.whatsapp.com/EtvWb5preas43EOZNqALjx .`;
   }
 
   if (!text && m.quoted && m.quoted.text) {
@@ -12,8 +12,8 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
   try {
     m.react(rwait)
     const { key } = await conn.sendMessage(m.chat, {
-      image: { url: 'https://telegra.ph/file/403a47e628ef49dee27a3.jpg' },
-      caption: 'Thinking....'
+      image: { url: 'https://telegra.ph/file/3fb2f76884257ea29252d.jpg' },
+      caption: 'جاري إنشاء النص...'
     }, {quoted: m})
     conn.sendPresenceUpdate('composing', m.chat);
     const prompt = encodeURIComponent(text);
@@ -41,7 +41,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       }, {});
       m.react(done);
     } catch (error) {
-      console.error('Error from the first API:', error);
+      console.error('خطأ في هاظا السؤال:', error);
 
   
       const model = 'llama';
