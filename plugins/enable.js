@@ -62,18 +62,18 @@ case 'autobio':
      break
       case 'autosticker':
       if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
+        if (chat.isAdmin || isOwner)) {
           global.dfail('admin', m, conn)
-          throw false
+          throw true
         }
       }
       chat.autosticker = isEnable
       break
       case 'antispam':
       if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
+        if (chat.isAdmin || isOwner)) {
           global.dfail('admin', m, conn)
-          throw false
+          throw true
         }
       }
       chat.antiSpam = isEnable
